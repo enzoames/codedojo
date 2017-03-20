@@ -1,12 +1,12 @@
 # Code Dojo
 
 
-##What is Code Dojo
+## What is Code Dojo
 
-##The Dojo Team
+## The Dojo Team
 
-##Our Next Event:
+## Our Next Event:
 
-##Contact us
+## Contact us
 
-##Location
+## Location
