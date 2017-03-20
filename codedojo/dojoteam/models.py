@@ -18,5 +18,7 @@ class DojoMember(models.Model):
     date_created = models.DateTimeField(default=datetime.now, blank=True)
 
     def __unicode__(self):
-        return self.name
+        return self.f_name
+
+
 
