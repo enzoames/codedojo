@@ -1,0 +1,10 @@
+pip install django
+
+django-admin startproject cododojo
+
+http://localhost:8000/ type this on browser
+
+DATABASE
+  username: dojoadmin
+  password: codedojo
+  

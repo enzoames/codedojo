@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^', include('dojomain.urls')),
     url(r'^contact/', include('contact.urls')),
     url(r'^aboutdojo/', include('aboutdojo.urls')),
-    url(r'^aboutdojo/dojoteam', include('dojoteam.urls')),
+    url(r'^dojoteam/', include('dojoteam.urls')),
 ]
