@@ -12,8 +12,5 @@ from dojoteam.models import DojoMember, DojoMemberType
 
 urlpatterns = [
     url(r'^$', views.Member, name='Member'),
-    url(r'^Enzo', views.memberClicked(request='GET', f_name='Enzo'), name='memberClicked')
-    #url(r'^memberClicked/(?P<f_name>\w+)/$', views.memberClicked, name='memberClicked')
+    url(r'^(?P<f_name>\w+)/$', views.memberClicked, name='memberClicked')
 ]
-
-#r'^(?P<f_name>[-\w\d]+)/$'

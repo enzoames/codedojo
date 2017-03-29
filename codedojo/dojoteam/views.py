@@ -5,24 +5,17 @@ from models import DojoMember
 # VIEWS
 # Takes in a web request and returns a response (http request)
 
-# This function returns all the data inside our database table DojoMember
+# This function sends information of table DojoMember to the dojoteam.html so it can be displayed
 def Member(request):
     member = DojoMember.objects.all()
     return render(request, 'dojoteam/dojoteam.html', {'member': member})
 
 
-# We need to query down to the member we are trying to obtain. Can not return entire table of members
-# def EnzoClicked(request):
-#     instance = get_object_or_404(DojoMember, f_name="Enzo")
-#     context = {
-#         'instance': instance,
-#     }
-#     return render(request, 'dojoteam/enzo.html', context)
-
+# This method gets called when a name is clicked in /dojoteam, it opens the members personal page
 def memberClicked(request, f_name):
     print f_name
     instance = get_object_or_404(DojoMember, f_name=f_name)
     context = {
         'instance': instance,
     }
-    return render(request, 'dojoteam/Enzo.html' , context)
+    return render(request, 'dojoteam/{}.html'.format(f_name), context)
