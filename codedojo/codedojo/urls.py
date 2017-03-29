@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^contact/', include('contact.urls')),
     url(r'^aboutdojo/', include('aboutdojo.urls')),
     url(r'^dojoteam/', include('dojoteam.urls')),
+    #url(r'^(?P<f_name>\w+)/', include('dojoteam.urls')),
 ]

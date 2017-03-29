@@ -9,11 +9,14 @@
     <title>The Dojo Team</title>
 </head>
 <body>
+
     <h2> This is our team </h2>
-    {% for member in object_list %}
-    <h4>{{ member.f_name}} {{ member.l_name  }} <a href="/dojoteam/{{member.f_name}}"> Profile </a> </h4>
+    {% for m in member %}
+    <h4>{{ m.f_name}} {{ m.l_name  }} <a href="/dojoteam/{{m.f_name}}"> Profile </a> </h4>
     {% endfor %}
+
 </body>
 </html>
+
 
 {% endblock %}
